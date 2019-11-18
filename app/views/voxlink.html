@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
+  <style>
+    html {
+      font-family: sans-serif;
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    main,
+    menu,
+    nav,
+    section,
+    summary {
+      display: block;
+    }
+
+    audio,
+    canvas,
+    progress,
+    video {
+      display: inline-block;
+      vertical-align: baseline;
+    }
+
+    audio:not([controls]) {
+      display: none;
+      height: 0;
+    }
+
+    [hidden],
+    template {
+      display: none;
+    }
+
+    a {
+      background-color: transparent;
+    }
+
+    a:active,
+    a:hover {
+      outline: 0;
+    }
+
+    abbr[title] {
+      border-bottom: 1px dotted;
+    }
+
+    dfn {
+      font-style: italic;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin: .67em 0;
+    }
+
+    mark {
+      background: #ff0;
+      color: #000;
+    }
+
+    small {
+      font-size: 80%;
+    }
+
+    sub,
+    sup {
+      font-size: 75%;
+      line-height: 0;
+      position: relative;
+      vertical-align: baseline;
+    }
+
+    sup {
+      top: -.5em;
+    }
+
+    sub {
+      bottom: -.25em;
+    }
+
+    img {
+      border: 0;
+    }
+
+    svg:not(:root) {
+      overflow: hidden;
+    }
+
+    figure {
+      margin: 1em 40px;
+    }
+
+    hr {
+      box-sizing: content-box;
+      height: 0;
+    }
+
+    code,
+    kbd,
+    pre,
+    samp {
+      font-family: monospace, monospace;
+      font-size: 1em;
+    }
+
+    button,
+    input,
+    optgroup,
+    select,
+    textarea {
+      color: inherit;
+      font: inherit;
+      margin: 0;
+    }
+
+    button {
+      overflow: visible;
+    }
+
+    button,
+    select {
+      text-transform: none;
+    }
+
+    button,
+    html input[type=button],
+    /* 1 */
+    input[type=reset],
+    input[type=submit] {
+      -webkit-appearance: button;
+      cursor: pointer;
+    }
+
+    button[disabled],
+    html input[disabled] {
+      cursor: default;
+    }
+
+    input {
+      line-height: normal;
+    }
+
+    input[type=checkbox],
+    input[type=radio] {
+      box-sizing: border-box;
+      padding: 0;
+    }
+
+    input[type=number]::-webkit-inner-spin-button,
+    input[type=number]::-webkit-outer-spin-button {
+      height: auto;
+    }
+
+    input[type=search] {
+      -webkit-appearance: textfield;
+      box-sizing: content-box;
+    }
+
+    input[type=search]::-webkit-search-cancel-button,
+    input[type=search]::-webkit-search-decoration {
+      -webkit-appearance: none;
+    }
+
+    fieldset {
+      border: 1px solid silver;
+      margin: 0 2px;
+      padding: .35em .625em .75em;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    td,
+    th {
+      padding: 0;
+    }
+
+    b,
+    strong,
+    optgroup {
+      font-weight: 700;
+    }
+
+    pre,
+    textarea {
+      overflow: auto;
+    }
+
+    button::-moz-focus-inner,
+    input::-moz-focus-inner,
+    legend {
+      border: 0;
+      padding: 0;
+    }
+  </style>
+  <link rel="stylesheet" href="/assets/voxlink/styles/style.min.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-top">
+      <div class="container">
+        <a class="top-call" href="tel:+78772210295">8 (8772) 210-295</a>
+        <a class="top-mail" href="mailto:job@voxlink.ru">job@voxlink.ru</a>
+      </div>
+    </div>
+    <div class="header-main">
+      <div class="container">
+        <div class="main-title">
+          <h1>Привет.</h1>
+          <span class="desc-title">В нашу команду <br>нужны новые <br> супергерои.</span>
+          <span class="rd">Готов?</span>
+        </div>
+      </div>
+      <img src="/assets/voxlink/images/header-bg.png" alt="" id="header-bg">
+      <img src="/assets/voxlink/images/header-bg_m.png" alt="" id="header-bg_m">
+    </div>
+    <a href="#c1" class="header-btn"></a>
+  </header>
+
+  <section id="c1">
+    <div class="container">
+      <div class="item left">
+        <h2>Ищем <span>менеджеров продаж</span></h2>
+        <p>На постоянную работу <br><span class="tlg">в Брянске,</span> <br>
+          <span class="tm">которые хотят развиваться и работать в интересных проектах</span></p>
+      </div>
+      <div class="item right">
+        <div class="form-wrapper">
+          <form action="/" method="post" class="form">
+            <p class="form-title">Отправьте заявку и мы свяжемся с вами через 15 минут</p>
+            <input name="name" type="text" class="form-inpt" placeholder="Ваше имя" required>
+            <input name="phone" type="text" class="form-inpt" placeholder="Ваш телефон" required>
+            <button class="form-btn">Отправить заявку</button>
+          </form>
+          <button class="btn-work">Заполните анкету</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c2">
+    <div class="container">
+      <div class="item left">
+        <h2>Кто ты?</h2>
+        <p>Если ты — менеджер высокого звена, который знает толк в продажах, умеет общаться с людьми, а аббревиатуры SPIN и SWOT не вводят тебя в ужас и удивление, тогда ты именно тот кто нам нужен!</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="c3">
+    <div class="container">
+      <div class="item left">
+        <div class="video-wrapper">
+          <iframe width="100%" height="400px" src="https://www.youtube.com/embed/Zjiq1MOLxac" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div class="item right">
+        <h2>Кто мы?</h2>
+        <p class="list-title">Коротко о нас:</p>
+        <ul class="list">
+          <li>Компания Вокс Линк — лидер рынка по внедрениям систем IP-телефонии на базе IP-ATC Asterisk.</li>
+          <li>На нашему счету свыше четырехсот успешко выполненных проектов по всей России.</li>
+          <li>Среди наших клиентов как небольшие компании, насчитывающие до 10-ти человек, так и крупные федеральные клиенты, насчитывающие порядко 1000 сотрудников.</li>
+        </ul>
+        <div class="look">Посмотри <span>видео</span> о нас</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c4">
+    <div class="container">
+      <h2>Чем мы занимаемся</h2>
+      <div class="title-desc">
+        <p>Внедряем IP-телефонию Asteriks по всей России</p>
+        <p><span>Asteriks</span> — это самая популярная система IP-телефонии! <br>Она стоит более чем на 1.000.000 серверов по всему миру.</p>
+      </div>
+      <div class="item-wrap">
+        <div class="item">
+          <p>Создавать колл-центры <br>и офисные ATC</p>
+        </div>
+        <div class="item">
+          <p>Записывать все разговоры <br>и контролировать качество <br>работы сотрудников</p>
+        </div>
+        <div class="item">
+          <p>Даавать неограниченные <br>возможности за счет<br> программирования</p>
+        </div>
+        <div class="item">
+          <p>Связывать все офисные <br>компании в общую сеть <br>с бесплатными звонками</p>
+        </div>
+        <div class="item">
+          <p>IP-телефония на Asterisk <br>позволяет клиентам</p>
+        </div>
+        <div class="item">
+          <p>Не тратить ни копейки <br>на лицензии, <br>т.к. это GNU/GPL</p>
+        </div>
+        <div class="item">
+          <p>Снижать расходны <br>на телефонную связь</p>
+        </div>
+        <div class="item">
+          <p>И многие другие <br>функции!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c5">
+    <div class="container">
+      <h2>Среди наших Клиентов</h2>
+      <p>Мы выполнили свыше 400 проектов по внедрению IP-телефонии по всей России. <br> География наших клиентов простирается от Калининграда до Петропавловка-Камчатского. <br> Мы делаем реально крутые штуки, которые помогают клиентам зарабатывать
+        деньги.</p>
+    </div>
+    <div class="client-warp">
+      <div class="container">
+        <div id="client">
+          <div class="slide"><img src="/assets/voxlink/images/c5-slide1.jpg"></div>
+          <div class="slide"><img src="/assets/voxlink/images/c5-slide2.jpg"></div>
+          <div class="slide"><img src="/assets/voxlink/images/c5-slide3.jpg"></div>
+          <div class="slide"><img src="/assets/voxlink/images/c5-slide4.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c6">
+    <div class="container">
+      <h2>Отзывы наших клиентов</h2>
+      <div class="reviews-wrap">
+        <div id="reviews">
+          <div class="slide"><img src="/assets/voxlink/images/c6-slide1.jpg"></div>
+          <div class="slide"><img src="/assets/voxlink/images/c6-slide2.jpg"></div>
+          <div class="slide"><img src="/assets/voxlink/images/c6-slide3.jpg"></div>
+          <div class="slide"><img src="/assets/voxlink/images/c6-slide4.jpg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c7">
+    <div class="container">
+      <h2>Как мы из тебя сделаем супер профессионала</h2>
+      <p class="title-desc">Мы выстроили систему карьерного роста в нашей компании, которая позволит тебе расти и развиваться от самых азов до самых вершин!</p>
+      <div class="wrap-title">Посмотри какой путь тебе предстоит.</div>
+      <div class="wrap">
+        <div class="item">
+          <div class="item-title">Пройти внутреннее <br>обучение</div>
+          <div class="item-text">
+            <p>Мы разработали уникальную систему обучения, которая позволит тебе за коротки срок разобраться в тематике IP-телефонии и компьютерных сетей. Система состоит из обучающих видео, упражнений, тестов и задач. На каждом этапе тебе будет
+              помогать опытный наставник.</p>
+            <p>Но мы рассчитываем на то, что ты уже кое что умеешьи наше обучение покажется тебе слишком легким орешком :-)</p>
+            <p class="text-bot">Этот этап длится 2-4 недели.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-title">Стажировка под присмотром <br>опытных менеджеров</div>
+          <div class="item-text">
+            <p>После прохождения обучения в системе, мы можем с чистой совестью подключать тебя в работу в наши проекты. С помощью своего наставника и других коллег менеджеров ты будешь делать несложные вещи, но уже для реального клиента. </p>
+            <p>Тут появляется ответственность. Ты начинаешь приносить реальный вклад в работу твоих коллег.</p>
+            <p class="welcom">welcome to the team!</p>
+            <p class="text-bot">Этот этап длится 2-4 недели.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-title">Самостоятельное ведение <br>небольших проектов</div>
+          <div class="item-text">
+            <p>Поздравляем! Ты уже хорошо разбираешься в нашей теме.</p>
+            <p>Пора тебе уже делать проекты по внедрению IP-телефонии на базе Asterisk и получать за это дополнительные денежные бонусы. Самостоятельная работа над проектами - это новый шаг в твоей профессиональной эволюции. Ты доказал свой высокий
+              уровень и профессионализм, и мы даем тебе в самостоятельную работу клиентов. Всегда рядом с тобой более опытные коллеги, которые готовы помочь тебе в любой момент времени</p>
+            <p class="text-bot">Этот этап длится от 6 до 12 месяцев.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-title">Открываем новые горизонты: <br>ведение средних и крупных проектов.</div>
+          <div class="item-text">
+            <p>Ого! Теперь мы на равных! Пора покорять новые вершины! Твоего опыта достаточно, чтобы брать в работу более крупных клиентов с более масштабными и интересными задачами. Теперь тебе даются в работу серьезные клиенты с крутыми задачами.
+              Растут твои задачи - растет и твой доход! </p>
+            <p class="text-bot">Этот этап длится от 6 до 12 месяцев.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c8">
+    <div class="container">
+      <h2>Как проходит стажировка</h2>
+      <p class="title-desc">Мы стажировку оплачиваем так:</p>
+      <div class="item-wrap">
+        <div class="item left">
+          <div class="c8-nmbr">01</div>
+          <p>если человек прошел обучение <br>и средний бал по тестам <br>75 и выше, то добро пожаловать <br>к нам в команду, <br>а так же ЗП за первый месяц<br> <span>15 000</span> руб.</p>
+        </div>
+        <div class="item right">
+          <div class="c8-nmbr">02</div>
+          <p>если же человек не доучился, <br>не набрал положенный бал <br>или же понял, что это не его,<br> выплачиваем из расчета <br><span>5 000</span> руб <br> в месяц и прощаемся.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c9">
+    <div class="container">
+      <h2>Преимущества работы в нашей компании:</h2>
+      <div class="item-wrap">
+        <div class="item">
+          <div class="item-nmbr">
+            <div class="nmbr">1</div>
+          </div>
+          <div class="item-text">
+            <p>Мы думаем, что наша компания — одна из немногих Брянске, в которой менеджер может расти и развиваться, открывать для себя все больше и больше новых техник продаж, вести проекты крупнейших компаний, знакомится с огромным количеством
+              интереснейших людей по всей России, сидя в офисе из своего небольшого, но уютного города</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-nmbr">
+            <div class="nmbr">2</div>
+          </div>
+          <div class="item-text">
+            <p>Ты попадаешь в команду более сильных специалистов, чем ты. И со временем ты дотягиваешься до их уровня. Общество, в которое попадает человек всегда меняет его под себя. Попав в компанию крутых специалистов и гуру продаж, ты неизбежно
+              рано или поздно станешь таким же, одним из них. Или сойдешь с дистанции.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="item-nmbr">
+            <div class="nmbr">3</div>
+          </div>
+          <div class="item-text">
+            <p>В нашей компании ты сможешь развиваться именно не только как менеджер, ты можешь одновременно качать скилл такого важнейшего специалиста как руководитель проекта. У нас ты не будешь заниматься мелкой и скучной рутиной, ты будешь делать
+              то, что не умеют другие.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c10">
+    <div class="container">
+      <h2>Твое рабочее место</h2>
+      <img src="/assets/voxlink/images/c10-img.jpg" alt="">
+    </div>
+  </section>
+
+  <section id="c11">
+    <div class="container">
+      <h2>Фотогалерея</h2>
+      <div class="wrap">
+        <div class="item">
+          <img src="/assets/voxlink/images/c11-item1.jpg" alt="">
+          <div class="item-text">Текст</div>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c11-item2.jpg" alt="">
+          <div class="item-text">Текст</div>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c11-item3.jpg" alt="">
+          <div class="item-text">Текст</div>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c11-item4.jpg" alt="">
+          <div class="item-text">Текст</div>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c11-item5.jpg" alt="">
+          <div class="item-text">Текст</div>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c11-item6.jpg" alt="">
+          <div class="item-text">Текст</div>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c11-item7.jpg" alt="">
+          <div class="item-text">Текст</div>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c11-item8.jpg" alt="">
+          <div class="item-text">Текст</div>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c11-item9.jpg" alt="">
+          <div class="item-text">Текст</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c12">
+    <div class="container">
+      <div class="item-wrap">
+        <div class="item">
+          <h3>График работы</h3>
+          <p>Мы работаем в будние дни <br>с <span>10-00</span> до <span>19-00</span><br> с перерывом на обед (1 час).</p>
+        </div>
+        <div class="item">
+          <h3>Наш офис</h3>
+          <p>Офис расположен в...</p>
+        </div>
+        <div class="item">
+          <h3>Твой компьютер</h3>
+          <p>Для тебя приготовлен мощный <br>компьютер Hewlett Packard <br> с процессором Core i5 <br> и двумя мониторами.</p>
+        </div>
+        <div class="item">
+          <h3>Кофе-машина и чай</h3>
+          <p>В офисе есть кофе-машина <br> и зерновой кофе, натуральный <br>кенийский чай, холодильник <br>и микроволновка.</p>
+        </div>
+        <div class="item">
+          <h3>Твоё рабочее место</h3>
+          <p>Большой рабочий стол, <br>комфортное кресло, <br>IP-телефон Digium D40 <br>и IP-телефон Cisco SPA-504, <br>а также — гарнитура для него.</p>
+        </div>
+        <div class="item">
+          <h3>И ещё...</h3>
+          <p>А каждое утро в офисе <br>появляются свежие печеньки, <br>пироженые, сладости, <br>конфеты и сок. Ну и X-Box 360, <br>в который можно поиграть <br>с коллегами!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c13">
+    <div class="container">
+      <h2>Программы и ресурсы <br> с которыми мы работаем</h2>
+      <div class="item-wrap">
+        <div class="item">
+          <p>Система управления <br>взаимоотношениями <br>между клиентами SalesMan</p>
+          <div class="item-text">С помощью даннй CRM-системы <br>мы планируем свою деятельность, <br>фиксируем звонки, письма, <br>договоренности с клиентами,<br> планируем встречи и следующие <br>контакты.</div>
+        </div>
+        <div class="item">
+          <p>Хранения данных <br>в OwnCloud</p>
+          <div class="item-text">В ownCloud мы храним все файлы <br>связанные с нашей деятельностью. <br>Коммерческие предложения, <br>договоры, схемы, технические задания <br>и прочая информация по каждому <br>клиенту, который находится в
+            разработке, <br>хранится исключительно в ownCloud, <br>в индивидуальной папке клиента</div>
+        </div>
+        <div class="item">
+          <p>Инструмент управления <br>проектами ПланФикс</p>
+          <div class="item-text">ПланФикс помогает организовывать <br>совместную работу людей <br>и управлять ею. После того, как <br>клиент оплатит наши услуги, <br>мы заносим и ведем его проект <br>в ПланФиксе. Здесь ставятся задачи <br>инженерам,
+            а инженеры отчитываются <br>о проделанной работе.</div>
+        </div>
+        <div class="item">
+          <p>Messenger <br>Телеграмм</p>
+          <div class="item-text">Для оперативной связи друг <br>с другом мы пользуемся <br>Telegram Messenger. <br>Здесь мы общаемся друг <br>с другом и создаем чаты.</div>
+        </div>
+        <div class="item">
+          <p>Бухгалтерия для <br>предпринимателей <br>Эльба</p>
+          <div class="item-text">Эльба — инструмент для выставления <br>клиентам счетов, подготовки актов <br>и накладных. Из Эльбы мы отправляем <br>счета и закрывающие документы <br>клиентам, а при необходимости печатаем <br>их в офис. В Эльбу мы
+            заносим клиента, <br>получив от него реквизиты компании,<br>прописываем контактные данные <br>и платежные реквизиты</div>
+        </div>
+        <div class="item">
+          <p>База знаний</p>
+          <div class="item-text">В ней мы храним информацию <br>о дикторах, сотрудниках компании, <br>партнерах, поставщиках и, <br>конечно же, клиентах.</div>
+        </div>
+        <div class="item">
+          <p>Asterisk</p>
+          <div class="item-text">Самая популярная система <br>IP-телефонии. Создана в США <br>и развивается более 15 лет. <br>Полностью бесплатный <br>и открытый код. <br>Наш основной продукт.</div>
+        </div>
+        <div class="item">
+          <p>Программа для <br>рисования Gliffy</p>
+          <div class="item-text">В Глиффи мы рисуем схемы для <br>клиентов, которые потом вставляем <br>в коммерческие предложения.</div>
+        </div>
+        <div class="item">
+          <p>Gmail</p>
+          <div class="item-text">В Глиффи мы рисуем схемы для <br>клиентов, которые потом вставляем <br>в коммерческие предложения.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c14">
+    <div class="container">
+      <img src="/assets/voxlink/images/c14-img.png" alt="">
+      <div class="left">
+        <div class="text">
+          <p>Привет.</p>
+          <p>Меня зовут Сергей Грушко</p>
+          <p>Я являюсь генеральным директором компании «Вокс Линк» и ищу хороших специалистов себе в команду</p>
+        </div>
+      </div>
+      <div class="right">
+        <h2>Ты нам подходишь если:</h2>
+        <ul>
+          <li>Ты любишь общаться с людьми;</li>
+          <li>Продажи для тебя увлекательный процесс;</li>
+          <li>Ты работаешь на результат, а не просиживаешь штаны;</li>
+          <li>Ты легок на подъем и обучения для тебя интересный шаг к намеченным целям;</li>
+          <li>Ты креативен и любишь оптимизировать свой труд;</li>
+          <li>Ты вежлив и ценишь работу других людей;</li>
+          <li>Ты не боишься сложностей, и всегда доделываешь начатое до конца;</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="c15">
+    <div class="container">
+      <div class="left">
+        <h2>Ты нам не подходишь если:</h2>
+        <ul>
+          <li>Ты уверен, что уже всё знаешь в этой жизни и удивить тебя нечем;</li>
+          <li>Ты слишком самоуверен в себе и не считаешься с критикой и замечаниями в свой адрес;</li>
+          <li>Ты не привык доделывать начатое до конца;</li>
+          <li>Ты стесняешься говорить по телефону;</li>
+          <li>Ты не любишь продавать;</li>
+          <li>У тебя нет желания расти и развиваться;</li>
+          <li>У тебя много мыслей, но ты не можешь их четко сформулировать;</li>
+          <li>Ты звОнишь, а так же не знаешь элементарных правил русского языка, пишешь с ошибками</li>
+        </ul>
+      </div>
+      <img src="/assets/voxlink/images/c15-img.png" alt="">
+    </div>
+  </section>
+
+  <section id="c16">
+    <div class="container">
+      <div class="right">
+        <h2>К чему нужно быть готовым</h2>
+        <ul>
+          <li>Работы много. Реально много. Она офигительно интересная. Но лентяи у нас не приживаются;</li>
+          <li>Первое время нужно много учиться. Не только в офисе, но и дома;</li>
+          <li>При работе фуллтайм фриланс запрещен;</li>
+          <li>Мы не ищем клиентов в Брянске. Наши клиенты - это Москва и вся Россия. И ты будешь все делать из офиса в Брянске;</li>
+          <li>Все клиенты разные. Не всем получается сразу угодить. Но делать работу качественно - наша религия;</li>
+          <li>Твоя зарплата зависит от выполненной тобою работы. Трудолюбивые хорошо зарабатывают;</li>
+          <li>Мы обеспечиваем тебе все условия для роста. Но все остальное зависит от тебя;</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="c17">
+    <div class="container">
+      <h2>У тебя буду следующие обязанности:</h2>
+      <div class="item-wrap">
+        <div class="item">
+          <div class="item-nmbr">
+            <div class="nmbr">1</div>
+          </div>
+          <p>Прием обращений <br>от потенциальных <br>клиентов</p>
+        </div>
+        <div class="item">
+          <div class="item-nmbr">
+            <div class="nmbr">2</div>
+          </div>
+          <p>Ведение проектов <br>по телефонии</p>
+        </div>
+        <div class="item">
+          <div class="item-nmbr">
+            <div class="nmbr">3</div>
+          </div>
+          <p>Закупка <br>оборудования <br>под проекты</p>
+        </div>
+        <div class="item">
+          <div class="item-nmbr">
+            <div class="nmbr">4</div>
+          </div>
+          <p>Взаимодействие <br>с бухгалтерией</p>
+        </div>
+        <div class="item">
+          <div class="item-nmbr">
+            <div class="nmbr">5</div>
+          </div>
+          <p>Работа <br>с CRM системой</p>
+        </div>
+        <div class="item">
+          <div class="item-nmbr">
+            <div class="nmbr">6</div>
+          </div>
+          <p>Документооборот</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c18">
+    <div class="container">
+      <div class="left">
+        <h2>Как происходит твоя работа</h2>
+        <ul>
+          <li>Тебе предстоит работать с клиентами, которых интересует внедрение IP телефонии на базе Asterisk</li>
+          <li>Вся работа происходит удаленно, ездить по клиентам у нас не нужно.</li>
+          <li>Мы работаем из уютного офиса путем общения с клиентами по телефону и эл.почте</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container-right"></div>
+  </section>
+
+  <section id="c19">
+    <div class="container">
+      <h2>Вся работа происходит по такому сценарию</h2>
+      <div class="item-wrap">
+        <div class="item">
+          <p>Мы получаем <br>запрос от клиента</p>
+        </div>
+        <div class="item">
+          <p>Связываемся</p>
+        </div>
+        <div class="item">
+          <p>Находим проблему <br>(выявляем потребность)</p>
+        </div>
+        <div class="item">
+          <p>Обсуждаем <br>желаемый результат</p>
+        </div>
+        <div class="item">
+          <p>Отправляем <br>клиенту КП</p>
+        </div>
+        <div class="item">
+          <p>Курируем проект</p>
+        </div>
+        <div class="item">
+          <p>Отдаем в работу <br>инженеру</p>
+        </div>
+        <div class="item">
+          <p>Получаем оплату</p>
+        </div>
+        <div class="item">
+          <p>Выставляем счет</p>
+        </div>
+        <div class="item">
+          <p>Заключаем договор <br>с клиентом</p>
+        </div>
+        <div class="item">
+          <p>По готовности сдаем <br>проект вместе <br>с инженером клиенту</p>
+        </div>
+        <div class="item">
+          <p>Получаем еще одного <br>довольного клиента <br>и рекомендации</p>
+        </div>
+        <div class="item">
+          <p>Готово,</p>
+          <span>Вы восхитительны</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c20">
+    <div class="container">
+      <h2>Сколько ты будешь получать</h2>
+      <p class="title-desc">Чем быстрее ты будешь развиваться и увеличивать свои навыки, тем быстрее будет расти твоя зарплата. Кроме того, зарплата постоянно индексируется исходя из уровня инфляции.</p>
+      <div class="item-wrap">
+        <div class="item">
+          <p class="item-title">Стажер</p>
+          <p class="item-cost">15.000 <span>руб/месяц</span></p>
+        </div>
+        <div class="item">
+          <p class="item-title">Инженер</p>
+          <p class="item-cost">От 20.000 <span>руб/месяц <br>+ <br>бонусы</span></p>
+        </div>
+        <div class="item">
+          <p class="item-title">Эксперт</p>
+          <p class="item-cost">От 30.000 <span>руб/месяц <br>+ <br>бонусы</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="c21">
+    <div class="container">
+      <h2>Наша команда</h2>
+      <div class="item-wrap">
+        <div class="item">
+          <img src="/assets/voxlink/images/c21-item1.jpg" alt="">
+          <p class="item-title">Сергей Грушко</p>
+          <p class="item-desc">генеральный директор</p>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c21-item2.jpg" alt="">
+          <p class="item-title">Артем Горлов</p>
+          <p class="item-desc">начальник отдела продаж</p>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c21-item3.jpg" alt="">
+          <p class="item-title">Виталий Шелест</p>
+          <p class="item-desc">руководитель проектов</p>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c21-item4.jpg" alt="">
+          <p class="item-title">Виктор Соколов</p>
+          <p class="item-desc">менеджер</p>
+        </div>
+        <div class="item">
+          <img src="/assets/voxlink/images/c21-item5.jpg" alt="">
+          <p class="item-title">Щулькина Руслана</p>
+          <p class="item-desc">менеджер</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="left">
+        <h2>Время действовать. Твой ход!</h2>
+        <p>Записаться на собеседование</p>
+        <a class="f-mail" href="mailto:job@voxlink.ru"><span>E-mail:</span> job@voxlink.ru</a><br>
+        <a class="f-phone" href="tel:88772210295">8 (8772) 210-295</a>
+      </div>
+      <div class="right">
+        <div class="form-wrapper">
+          <form action="/" method="post" class="form">
+            <p class="form-title">Отправьте заявку и мы свяжемся с вами через 15 минут</p>
+            <input name="name" type="text" class="form-inpt" placeholder="Ваше имя" required>
+            <input name="phone" type="text" class="form-inpt" placeholder="Ваш телефон" required>
+            <button class="form-btn">Отправить заявку</button>
+          </form>
+          <button class="btn-work">Заполните анкету</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="g-hidden">
+    <div class="box-modal zv clearfix" id="modal-success">
+      <div class="box-modal_close arcticmodal-close">X</div>
+      <div class="subname">
+        <h2>Спасибо!</h2>
+        <p>Ваша заявка отправлена</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="/assets/voxlink/scripts/bundle.min.js"></script>
+</body>
+
+</html>

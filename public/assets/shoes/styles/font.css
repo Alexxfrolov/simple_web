@@ -1,0 +1,114 @@
+
+
+
+@font-face {
+    font-family: 'bazhanovcregular';
+    src: url('../fonts/bazhanovc-webfont.eot');
+    src: url('../fonts/bazhanovc-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bazhanovc-webfont.woff2') format('woff2'),
+         url('../fonts/bazhanovc-webfont.woff') format('woff'),
+         url('../fonts/bazhanovc-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bazhanovcitalic';
+    src: url('../fonts/bazhanovc-italic-webfont.eot');
+    src: url('../fonts/bazhanovc-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bazhanovc-italic-webfont.woff2') format('woff2'),
+         url('../fonts/bazhanovc-italic-webfont.woff') format('woff'),
+         url('../fonts/bazhanovc-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'bazhanovcbold';
+    src: url('../fonts/bazhanovc-bold-webfont.eot');
+    src: url('../fonts/bazhanovc-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bazhanovc-bold-webfont.woff2') format('woff2'),
+         url('../fonts/bazhanovc-bold-webfont.woff') format('woff'),
+         url('../fonts/bazhanovc-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'latosemibold';
+    src: url('../fonts/lato-semibold-webfont.eot');
+    src: url('../fonts/lato-semibold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-semibold-webfont.woff') format('woff'),
+         url('../fonts/lato-semibold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latoregular';
+    src: url('../fonts/lato-regular-webfont.eot');
+    src: url('../fonts/lato-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lato-regular-webfont.woff') format('woff'),
+         url('../fonts/lato-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latomedium';
+    src: url('../fonts/lato-medium-webfont.eot');
+    src: url('../fonts/lato-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-medium-webfont.woff2') format('woff2'),
+         url('../fonts/lato-medium-webfont.woff') format('woff'),
+         url('../fonts/lato-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'latobold';
+    src: url('../fonts/lato-bold-webfont.eot');
+    src: url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-bold-webfont.woff2') format('woff2'),
+         url('../fonts/lato-bold-webfont.woff') format('woff'),
+         url('../fonts/lato-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'latolight';
+    src: url('../fonts/lato-light-webfont.eot');
+    src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lato-light-webfont.woff2') format('woff2'),
+         url('../fonts/lato-light-webfont.woff') format('woff'),
+         url('../fonts/lato-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}

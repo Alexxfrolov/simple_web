@@ -1,8 +1,10 @@
+# frozen_string_literal: true
+
 require File.join(File.dirname(__FILE__), '../', 'app', 'controllers', 'base_controller')
 
 class Route
   attr_accessor :klass_name, :path, :instance_method
-  def initialize route_array
+  def initialize(route_array)
     @path            = route_array.first
     @klass_name      = route_array.last[:klass]
     @instance_method = route_array.last[:method]

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class RequestHandler
   def call(env)
     route = MainRackApplication.router.route_for(env)
