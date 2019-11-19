@@ -1,19 +1,19 @@
 # frozen_string_literal: true
 
-class Web < BaseController
+class Landing < BaseController
   def ecomaral
-    response
+    render :ecomaral
   end
 
   def helloween
-    response
+    render :helloween
   end
 
   def voxlink
-    response
+    render :voxlink
   end
 
   def shoes
-    response
+    render :shoes
   end
 end

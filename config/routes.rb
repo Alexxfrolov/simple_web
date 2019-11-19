@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
 App.router.config do
-  get '/ecomaral', to: 'web#ecomaral'
-  get '/helloween', to: 'web#helloween'
-  get '/voxlink', to: 'web#voxlink'
-  get '/shoes', to: 'web#shoes'
+  get '/ecomaral', to: 'landing#ecomaral'
+  get '/helloween', to: 'landing#helloween'
+  get '/voxlink', to: 'landing#voxlink'
+  get '/shoes', to: 'landing#shoes'
+  get /./, to: 'error#not_found'
 end

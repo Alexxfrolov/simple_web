@@ -20,7 +20,9 @@ class Router
   def route_for(env)
     path   = env['PATH_INFO']
     method = env['REQUEST_METHOD'].downcase.to_sym
-    route_array = routes[method].detect do |route|
+    # require "pry-byebug"
+    # binding.pry
+    route_array = routes[method].find do |route|
       case route.first
       when String
         path == route.first
