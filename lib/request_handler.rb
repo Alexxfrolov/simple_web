@@ -2,7 +2,7 @@
 
 class RequestHandler
   def call(env)
-    route = MainRackApplication.router.route_for(env)
+    route = App.router.route_for(env)
     if route
       response = route.execute(env)
       return response.rack_response

@@ -3,14 +3,17 @@
 require 'bundler'
 Bundler.require
 
-require File.join(File.dirname(__FILE__), 'lib', 'main_rack')
-require File.join(File.dirname(__FILE__), 'lib', 'request_handler')
+::ROOT = File.expand_path(__dir__)
 
-MainRackApplication = MainRack.new
+require File.join(ROOT, 'lib', 'main_rack')
+require File.join(ROOT, 'lib', 'request_handler')
+
+App = MainRack.new
 
 # Serve our index file by default
 use Rack::Static, urls: ['/assets'], root: 'public'
 
 # Load the routes
-require File.join(File.dirname(__FILE__), 'config', 'routes')
+require File.join(ROOT, 'config', 'routes')
+use Rack::Reloader
 run RequestHandler.new

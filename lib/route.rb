@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require File.join(File.dirname(__FILE__), '../', 'app', 'controllers', 'base_controller')
+require File.join(ROOT, 'app', 'controllers', 'base_controller')
 
 class Route
   attr_accessor :klass_name, :path, :instance_method
@@ -20,6 +20,6 @@ class Route
   end
 
   def handle_requires
-    require File.join(File.dirname(__FILE__), '../', 'app', 'controllers', klass_name.downcase + '.rb')
+    require File.join(ROOT, 'app', 'controllers', klass_name.downcase + '.rb')
   end
 end
