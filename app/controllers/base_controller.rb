@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-
+require "erb"
 require File.join(ROOT, 'lib', 'response')
 
 class BaseController
@@ -15,8 +15,12 @@ class BaseController
   def render(name)
     Response.new.tap do |response|
       response.headers = { 'Content-Type' => 'text/html' }
-      response.body = File.read("#{@view_path}/#{name}.html")
+      response.body = erb("#{@view_path}/#{name}.html.erb")
       response.status_code = 200
     end
+  end
+
+  def erb(path)
+    ERB.new(File.read(path)).result(binding)
   end
 end
