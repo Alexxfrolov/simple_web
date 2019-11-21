@@ -1,4 +1,12 @@
-<h1>Hello World <%= @var %>!</h1>
-<% @landings.each do |path| %>
-  <div><a class="link" href=<%= path %>><%= path %></a></div>
-<% end %>
+<h1>Hello World!</h1>
+<div>
+  <% @landings.each do |path| %>
+    <div><a class="link" href=<%= path %>><%= path %></a></div>
+  <% end %>
+</div>
+<br>
+<div>
+  <% @projects.each do |path| %>
+    <div><a class="link" href=<%= path %>><%= path %></a></div>
+  <% end %>
+</div>
