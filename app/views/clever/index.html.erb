@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clever: интернет-магазин очков, оправ и очковых линз</title>
+    <link rel="stylesheet" href="/assets/clever/styles/normalize.css">
+    <link rel="stylesheet" href="/assets/clever/styles/jquery.bxslider.css">
+    <link rel="stylesheet" href="/assets/clever/styles/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-sm">
+      <a href="/"><img src="/assets/clever/images/logo_white-sm.png" alt=""></a>
+    </div>
+
+    <div class="container">
+      <div class="header__login">
+          <a href="#" class="btn-modal" data-modal="1">Вход</a><span class="nfm"> | <a href="#" class="btn-modal" data-modal="2">Регистрация</a></span>
+      </div>
+
+      <div class="header__logo">
+          <a href="/" title=""><img src="/assets/clever/images/logo_green.jpg" alt="Clever"></a>
+      </div>
+
+      <div class="header__info">
+        <li>
+          <sub>p</sub>
+          <a href="callto:+74733003677">+7 (473) 300 36 77</a>
+        </li>
+        <li>
+          <sub>e</sub>
+          <a href="mailto:info@linzavrn.ru">info@linzavrn.ru</a>
+        </li>
+        <li>
+          <sub>m</sub>
+          Воронеж, ул.Мира 3 <br>
+          <span>(вход с ул. Ф. Энгельса)</span>
+        </li>
+      </div>
+      <a href="/clever/cart" class="header__basket">
+        <div id="basket">
+          <span class="ic">
+              <sub>b</sub>
+              <span id="item-count">0</span>
+          </span>
+          <span><span class="dark-text">0</span> руб</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container">
+    <button class="mobile-menu">
+      <span></span>
+    </button>
+    <ul>
+      <a href="/"><img src="/assets/clever/images/logo_white-sm.png" alt=""></a>
+      <a href="#">Акции, скидки</a>
+      <a href="#">Выбор очков</a>
+      <a href="#">Доставка и оплата</a>
+      <a href="#">Отзывы</a>
+      <a href="#">Копилка знаний</a>
+      <a href="#">Контакты</a>
+    </ul>
+    </div>
+  </nav>
+
+  <div class="slider nfm">
+    <div id="da-slider" class="da-slider">
+
+    <div class="da-slide s1">
+      <h2>При заказе линз для очков <br><span class="dark-green">Скидка на оправу 15%</span></h2>
+      <div class="da-img"><img src="/assets/clever/images/slider/slide1-img.png" alt="Подарок"></div>
+    </div>
+    <div class="da-slide s2">
+      <h2><span class="dark-green">Весенняя скидка <br>на фотохромные линзы</span></h2>
+      <div class="da-img2-1"><img src="/assets/clever/images/slider/slide2-img.png" alt="Очки"></div>
+      <div class="da-img2-2"><img src="/assets/clever/images/slider/slide2-price.png" alt="sale"></div>
+    </div>
+    <div class="da-slide s3">
+      <h2 class="s3-h2"><span class="dark-green">Линзы для роботы <br>за компьютером</span></h2>
+      <div class="da-img3"><img src="/assets/clever/images/slider/slide3-price.png" alt=""></div>
+    </div>
+
+    <nav class="da-arrows">
+      <span class="da-arrows-prev icon-slider-arr-left"></span>
+      <span class="da-arrows-next icon-slider-arr-right"></span>
+    </nav>
+
+  </div>
+  </div>
+
+  <section class="c1">
+    <div class="container">
+      <button class="mobile-filter"></button>
+      <div class="filter nfm">
+        <h2>Что Вы ищите?</h2>
+        <ul class="filter_cat">
+          <select name="" id="filter-choice">
+            <option value="1">Марочные линзы для очков</option>
+            <option value="2">Оправы для очков</option>
+            <option value="3">Солнцезащитные очки</option>
+            <option value="4">Аксессуары</option>
+          </select>
+          <div class="filter-wrap active" id="filter-wrap1">
+            <li class="drop"><a href="#">Бренд</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="checkbox">
+                  <label for="Punkt1">Punkt1</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="checkbox">
+                  <label for="Punkt2">Punkt2</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="checkbox">
+                  <label for="Punkt3">Punkt3</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Материал</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="checkbox">
+                  <label for="Punkt1">Punkt1</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="checkbox">
+                  <label for="Punkt2">Punkt2</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="checkbox">
+                  <label for="Punkt3">Punkt3</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Тип</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="checkbox">
+                  <label for="Punkt1">Punkt1</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="checkbox">
+                  <label for="Punkt2">Punkt2</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="checkbox">
+                  <label for="Punkt3">Punkt3</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Цвет</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="checkbox">
+                  <label for="Punkt1">Punkt1</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="checkbox">
+                  <label for="Punkt2">Punkt2</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="checkbox">
+                  <label for="Punkt3">Punkt3</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Асферическая</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="radio" name="group1" checked>
+                  <label for="Punkt1">Не важно</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="radio" name="group1">
+                  <label for="Punkt2">Да</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="radio" name="group1">
+                  <label for="Punkt3">Нет</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">УФ-защита</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="radio" name="group2" checked>
+                  <label for="Punkt1">Не важно</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="radio" name="group2">
+                  <label for="Punkt2">Да</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="radio" name="group2">
+                  <label for="Punkt3">Нет</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Тип оправы</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="checkbox">
+                  <label for="Punkt1">Punkt1</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="checkbox">
+                  <label for="Punkt2">Punkt2</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="checkbox">
+                  <label for="Punkt3">Punkt3</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Страна производства</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="checkbox">
+                  <label for="Punkt1">Punkt1</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="checkbox">
+                  <label for="Punkt2">Punkt2</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="checkbox">
+                  <label for="Punkt3">Punkt3</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Цена</a>
+              <ul class="cat_dropdown">
+                <li>
+                    <div id="slider-cost"></div>
+                    <p>
+                      <input type="text" id="cost-min" readonly>
+                       -
+                      <input type="text" id="cost-max" readonly>
+                    </p>
+                </li>
+              </ul>
+            </li>
+          </div>
+          <div class="filter-wrap" id="filter-wrap2">
+            <li class="drop"><a href="#">Бренд</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="checkbox">
+                  <label for="Punkt1">Punkt1</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="checkbox">
+                  <label for="Punkt2">Punkt2</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="checkbox">
+                  <label for="Punkt3">Punkt3</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Возраст</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Adults" type="checkbox">
+                  <label for="Adults">Взрослые</label>
+                </li>
+                <li>
+                  <input id="teenage" type="checkbox">
+                  <label for="teenage">Подростковые</label>
+                </li>
+                <li>
+                  <input id="kids" type="checkbox">
+                  <label for="kids">Детские</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Пол</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="male" type="checkbox">
+                  <label for="male">Мужские</label>
+                </li>
+                <li>
+                  <input id="famale" type="checkbox">
+                  <label for="famale">Женские</label>
+                </li>
+                <li>
+                  <input id="uni" type="checkbox">
+                  <label for="uni">Унисекс</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Материал</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="metall" type="checkbox">
+                  <label for="metall">Металл</label>
+                </li>
+                <li>
+                  <input id="plastick" type="checkbox">
+                  <label for="plastick">Пластик</label>
+                </li>
+                <li>
+                  <input id="combo" type="checkbox">
+                  <label for="combo">Комбинированн</label>
+                </li>
+                <li>
+                  <input id="other" type="checkbox">
+                  <label for="other">Другое</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Форма</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="rectangular" type="checkbox">
+                  <label for="rectangular">Прямоугольная</label>
+                </li>
+                <li>
+                  <input id="round" type="checkbox">
+                  <label for="round">Круглая</label>
+                </li>
+                <li>
+                  <input id="oval" type="checkbox">
+                  <label for="oval">Овальная</label>
+                </li>
+                <li>
+                  <input id="batterfly" type="checkbox">
+                  <label for="batterfly">Бабочки</label>
+                </li>
+                <li>
+                  <input id="drops" type="checkbox">
+                  <label for="drops">Капли</label>
+                </li>
+                <li>
+                  <input id="cat" type="checkbox">
+                  <label for="cat">Кошачий глаз</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Конструкция оправы</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="tipping" type="checkbox">
+                  <label for="tipping">Ободковая</label>
+                </li>
+                <li>
+                  <input id="polutipping" type="checkbox">
+                  <label for="polutipping">Полуободковая</label>
+                </li>
+                <li>
+                  <input id="beztipping" type="checkbox">
+                  <label for="beztipping">Безободковая</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Цвет оправы</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="checkbox">
+                  <label for="Punkt1">Punkt1</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="checkbox">
+                  <label for="Punkt2">Punkt2</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="checkbox">
+                  <label for="Punkt3">Punkt3</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Наличие флекса</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="radio" name="group3" checked>
+                  <label for="Punkt1">Не важно</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="radio" name="group3">
+                  <label for="Punkt2">Да</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="radio" name="group3">
+                  <label for="Punkt3">Нет</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Наличие футляра</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="radio" name="group4" checked>
+                  <label for="Punkt1">Не важно</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="radio" name="group4">
+                  <label for="Punkt2">Да</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="radio" name="group4">
+                  <label for="Punkt3">Нет</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Страна производства</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="germany" type="checkbox">
+                  <label for="germany">Германия</label>
+                </li>
+                <li>
+                  <input id="france" type="checkbox">
+                  <label for="france">Франция</label>
+                </li>
+                <li>
+                  <input id="italy" type="checkbox">
+                  <label for="italy">Италия</label>
+                </li>
+                <li>
+                  <input id="spain" type="checkbox">
+                  <label for="spain">Испания</label>
+                </li>
+                <li>
+                  <input id="singapore" type="checkbox">
+                  <label for="singapore">Сингапур</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Цена</a>
+              <ul class="cat_dropdown">
+                <li>
+                    <div id="slider-cost"></div>
+                    <p>
+                      <input type="text" id="cost-min" readonly>
+                       -
+                      <input type="text" id="cost-max" readonly>
+                    </p>
+                </li>
+              </ul>
+            </li>
+          </div>
+          <div class="filter-wrap" id="filter-wrap3">
+            <li class="drop"><a href="#">Бренд</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="ZEISS" type="checkbox">
+                  <label for="ZEISS">ZEISS</label>
+                </li>
+                <li>
+                  <input id="Essilor" type="checkbox">
+                  <label for="Essilor">Essilor</label>
+                </li>
+                <li>
+                  <input id="LTL" type="checkbox">
+                  <label for="LTL">LTL</label>
+                </li>
+                <li>
+                  <input id="INDO" type="checkbox">
+                  <label for="INDO">INDO INTRA</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Возраст</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Adults" type="checkbox">
+                  <label for="Adults">Взрослые</label>
+                </li>
+                <li>
+                  <input id="teenage" type="checkbox">
+                  <label for="teenage">Подростковые</label>
+                </li>
+                <li>
+                  <input id="kids" type="checkbox">
+                  <label for="kids">Детские</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Пол</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="male" type="checkbox">
+                  <label for="male">Мужские</label>
+                </li>
+                <li>
+                  <input id="famale" type="checkbox">
+                  <label for="famale">Женские</label>
+                </li>
+                <li>
+                  <input id="uni" type="checkbox">
+                  <label for="uni">Унисекс</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Материал</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="metall" type="checkbox">
+                  <label for="metall">Металл</label>
+                </li>
+                <li>
+                  <input id="plastick" type="checkbox">
+                  <label for="plastick">Пластик</label>
+                </li>
+                <li>
+                  <input id="combo" type="checkbox">
+                  <label for="combo">Комбинированн</label>
+                </li>
+                <li>
+                  <input id="other" type="checkbox">
+                  <label for="other">Другое</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Форма</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="rectangular" type="checkbox">
+                  <label for="rectangular">Прямоугольная</label>
+                </li>
+                <li>
+                  <input id="round" type="checkbox">
+                  <label for="round">Круглая</label>
+                </li>
+                <li>
+                  <input id="oval" type="checkbox">
+                  <label for="oval">Овальная</label>
+                </li>
+                <li>
+                  <input id="batterfly" type="checkbox">
+                  <label for="batterfly">Бабочки</label>
+                </li>
+                <li>
+                  <input id="drops" type="checkbox">
+                  <label for="drops">Капли</label>
+                </li>
+                <li>
+                  <input id="cat" type="checkbox">
+                  <label for="cat">Кошачий глаз</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Конструкция оправы</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="tipping" type="checkbox">
+                  <label for="tipping">Ободковая</label>
+                </li>
+                <li>
+                  <input id="polutipping" type="checkbox">
+                  <label for="polutipping">Полуободковая</label>
+                </li>
+                <li>
+                  <input id="beztipping" type="checkbox">
+                  <label for="beztipping">Безободковая</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Цвет оправы</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="white" type="checkbox">
+                  <label for="white">Белая</label>
+                </li>
+                <li>
+                  <input id="blue" type="checkbox">
+                  <label for="blue">Синяя</label>
+                </li>
+                <li>
+                  <input id="red" type="checkbox">
+                  <label for="red">Красная</label>
+                </li>
+                <li>
+                  <input id="grey" type="checkbox">
+                  <label for="grey">Серая</label>
+                </li>
+                <li>
+                  <input id="black" type="checkbox">
+                  <label for="black">Черная</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Цвет линзы</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="white" type="checkbox">
+                  <label for="white">Белая</label>
+                </li>
+                <li>
+                  <input id="blue" type="checkbox">
+                  <label for="blue">Синяя</label>
+                </li>
+                <li>
+                  <input id="red" type="checkbox">
+                  <label for="red">Красная</label>
+                </li>
+                <li>
+                  <input id="grey" type="checkbox">
+                  <label for="grey">Серая</label>
+                </li>
+                <li>
+                  <input id="black" type="checkbox">
+                  <label for="black">Черная</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Окрашивание линзы</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="radio" name="group5" checked>
+                  <label for="Punkt1">Сплошное</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="radio" name="group5">
+                  <label for="Punkt2">Градиентное</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Наличие флекса</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="Punkt1" type="radio" name="group6" checked>
+                  <label for="Punkt1">Не важно</label>
+                </li>
+                <li>
+                  <input id="Punkt2" type="radio" name="group6">
+                  <label for="Punkt2">Да</label>
+                </li>
+                <li>
+                  <input id="Punkt3" type="radio" name="group6">
+                  <label for="Punkt3">Нет</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Страна производства</a>
+              <ul class="cat_dropdown">
+                <li>
+                  <input id="germany" type="checkbox">
+                  <label for="germany">Германия</label>
+                </li>
+                <li>
+                  <input id="france" type="checkbox">
+                  <label for="france">Франция</label>
+                </li>
+                <li>
+                  <input id="italy" type="checkbox">
+                  <label for="italy">Италия</label>
+                </li>
+                <li>
+                  <input id="spain" type="checkbox">
+                  <label for="spain">Испания</label>
+                </li>
+                <li>
+                  <input id="singapore" type="checkbox">
+                  <label for="singapore">Сингапур</label>
+                </li>
+              </ul>
+            </li>
+            <li class="drop"><a href="#">Цена</a>
+              <ul class="cat_dropdown">
+                <li>
+                    <div id="slider-cost"></div>
+                    <p>
+                      <input type="text" id="cost-min" readonly>
+                       -
+                      <input type="text" id="cost-max" readonly>
+                    </p>
+                </li>
+              </ul>
+            </li>
+          </div>
+          <div class="filter-wrap" id="filter-wrap3">
+            <li class="drop"><a href="#">Цена</a>
+              <ul class="cat_dropdown">
+                <li>
+                    <div id="slider-cost"></div>
+                    <p>
+                      <input type="text" id="cost-min" readonly>
+                       -
+                      <input type="text" id="cost-max" readonly>
+                    </p>
+                </li>
+              </ul>
+            </li>
+          </div>
+        </ul>
+        <button class="btn">Применить</button>
+      </div>
+      <div class="content">
+        <div class="search">
+          <form action="/" method="post">
+            <input type="search" placeholder="Поиск">
+            <input type="submit" value="">
+          </form>
+        </div>
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">Очки</a></li>
+            <li><a href="#tabs-2">Солнцезащитные очки</a></li>
+            <li><a href="#tabs-3"><span class="icon-linza-logo"></span>Контактные линзы</a></li>
+          </ul>
+          <div class="tabs-content" id="tabs-1">
+            <p class="tabs-title"><span>Оправы медицинские</span></p>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <p class="tabs-title"><span>Марочные линзы для очков</span></p>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <p class="tabs-title"><span>Аксессуары</span></p>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+          </div>
+          <div class="tabs-content" id="tabs-2">
+            <p class="tabs-title"><span>Оправы медицинские</span></p>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <li><a href="#">бренд АААААА</a></li>
+              <li><a href="#">бренд ББББББ</a></li>
+              <li><a href="#">бренд ВВВВВВ</a></li>
+            </ul>
+            <p class="tabs-title"><span>Марочные линзы для очков</span></p>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <p class="tabs-title"><span>Аксессуары</span></p>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+          </div>
+          <div class="tabs-content" id="tabs-3">
+            <p class="tabs-title"><span>Оправы медицинские</span></p>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <p class="tabs-title"><span>Марочные линзы для очков</span></p>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <p class="tabs-title"><span>Аксессуары</span></p>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+            <ul>
+              <a href="#"><li>бренд АААААА</a></li>
+              <a href="#"><li>бренд ББББББ</a></li>
+              <a href="#"><li>бренд ВВВВВВ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="spec">
+          <h1>Спецпредложения</h1>
+          <div class="spec-wrap">
+            <div class="item item-gift">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket" data-id="1">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item item-sale">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket" data-id="2">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item item-new">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket" data-id="3">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item item-marge">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+            <div class="item">
+              <a href="#" class="item-img"><img src="/assets/clever/images/glases.jpg" alt="Очки"></a>
+              <a href="/clever/good" class="item-title">Очки мужские Essilor</a>
+              <span class="item-info">
+                <span class="item-cost"><span class="dark-green">1200</span> руб.</span>
+                <span class="item-basket">+<sub>b</sub></span>
+              </span>
+            </div>
+          </div>
+          <div class="item-pagination">
+            <span>Страница:</span>
+            <a href="#" class="active">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">33</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="c2 nfm">
+    <div class="container">
+    <div class="c-title">
+      <h2>5 причин, <br><span>почему у нас выгодно покупать</span></h2>
+    </div>
+      <ul>
+        <li>
+          <div class="c2-ic c2-icon-1"></div>
+          <p>Лучшие модели очков по доступным ценам</p>
+        </li>
+        <li>
+          <div class="c2-ic c2-icon-2"></div>
+          <p>Офтальмологи имеют высшую категорию</p>
+        </li>
+        <li>
+          <div class="c2-ic c2-icon-3"></div>
+          <p>Мастер-оптик с 20 летним стажем работы</p>
+        </li>
+        <li>
+          <div class="c2-ic c2-icon-4"></div>
+          <p>Удобное расположение магазина оптики</p>
+        </li>
+        <li>
+          <div class="c2-ic c2-icon-5"></div>
+          <p>Курьерская доставка по Воронежу</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="c3">
+    <div class="container">
+      <div class="c-title"><h2>Отзывы</h2></div>
+      <div class="bx-slider">
+        <div class="slide">
+          <img src="http://placehold.it/300x150&text=FooBar1">
+          <div class="bx-text">
+            <div class="bx-name">Виктория</div>
+            <div class="bx-date">30 Февраля 2016</div>
+            <p>Я очень люблю различные аксессуары и очки один из главных аксессуаров в моем гардеробе. Поэтому частенько радую себя новенькими очками. Хотя я раньше не думала над качеством очков, то теперь для меня это главный критерий.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="http://placehold.it/300x150&text=FooBar1">
+          <div class="bx-text">
+            <div class="bx-name">Виктория</div>
+            <div class="bx-date">30 Февраля 2016</div>
+            <p>Я очень люблю различные аксессуары и очки один из главных аксессуаров в моем гардеробе. Поэтому частенько радую себя новенькими очками. Хотя я раньше не думала над качеством очков, то теперь для меня это главный критерий.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="http://placehold.it/300x150&text=FooBar1">
+          <div class="bx-text">
+            <div class="bx-name">Виктория</div>
+            <div class="bx-date">30 Февраля 2016</div>
+            <p>Я очень люблю различные аксессуары и очки один из главных аксессуаров в моем гардеробе. Поэтому частенько радую себя новенькими очками. Хотя я раньше не думала над качеством очков, то теперь для меня это главный критерий.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=jVsnmgT42G7iPfHOgqJ3vkTm5qEjlZbi&amp;width=100%&amp;height=300&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+  </section>
+
+  <footer>
+    <div class="f-top">
+      <div class="container">
+        <ul>
+          <li><a href="/"><img src="/assets/clever/images/logo_white.png" alt="Clever"></a></li>
+          <li><sub>p</sub><a href="callto:+74733003677">+7 (473) 300 36 77</a></li>
+          <li><sub>e</sub><a href="mailto:info@linzavrn.ru">info@linzavrn.ru</a></li>
+          <li><sub>m</sub>Воронеж, ул.Мира 3</li>
+        </ul>
+        <div class="soc">
+          <a href="#" target="_blank">v</a>
+          <a href="#" target="_blank">f</a>
+          <a href="#" target="_blank">o</a>
+          <a href="#" target="_blank">g</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bot">
+    <div class="container">
+      <span>&copy; Copyright 2016</span>
+      <a href="/" title=""><img src="/assets/clever/images/madein.png" alt="intrid"></a>
+    </div>
+    </div>
+  </footer>
+
+  <!-- modal box -->
+  <div class="g-hidden">
+    <div class="box-modal zv clearfix" id="modal-1">
+      <div class="box-modal_close arcticmodal-close">X</div>
+      <div class="modal-form">
+        <form class="form" method="post" action="/">
+          <input type="email" name="login" placeholder="Ваш логин (email)" required>
+          <input type="password" name="password" placeholder="Ваш пароль" required>
+          <p><button type="submit" class="btn">Войти</button></p>
+          <p><a href="#">Забыли пароль?</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="g-hidden">
+    <div class="box-modal zv clearfix" id="modal-2">
+      <div class="box-modal_close arcticmodal-close">X</div>
+      <div class="modal-form">
+        <form class="form" method="post" action="/">
+          <input type="text" name="name" placeholder="ФИО" required>
+          <input type="email" name="email" placeholder="Ваш логин (email)" required>
+          <input type="password" name="password" placeholder="Введите пароль" required>
+          <input type="password" name="password" placeholder="Повторите пароль" required>
+          <input type="tel" name="tel" placeholder="Ваш телефон" required>
+          <textarea name="adress" id="adress" cols="30" rows="10" placeholder="Ваш адрес"></textarea>
+          <p>Гугл каптча галочкой</p>
+          <p><button type="submit" class="btn">Зарегестрироваться</button></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- end of modal box -->
+
+<script src="/assets/clever/scripts/html5shiv.js"></script>
+<script src="/assets/clever/scripts/jquery.js"></script>
+<script src="/assets/clever/scripts/jquery.bxslider.js"></script>
+<script src="/assets/clever/scripts/jquery-ui.min.js"></script>
+<script src="/assets/clever/scripts/jquery-ui2.min.js"></script>
+<script src="/assets/clever/scripts/jquery.cslider.js"></script>
+<script src="/assets/clever/scripts/modernizr.custom.js"></script>
+<script src="/assets/clever/scripts/modal.js"></script>
+<script src="/assets/clever/scripts/common.js"></script>
+
+</body>
+</html>

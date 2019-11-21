@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clever: интернет-магазин очков, оправ и очковых линз</title>
+    <link rel="stylesheet" href="/assets/clever/styles/normalize.css">
+    <link rel="stylesheet" href="/assets/clever/styles/jquery.bxslider.css">
+    <link rel="stylesheet" href="/assets/clever/styles/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-sm">
+      <a href="/"><img src="/assets/clever/images/logo_white-sm.png" alt=""></a>
+    </div>
+
+    <div class="container">
+      <div class="header__login">
+          <a href="#" class="btn-modal" data-modal="1">Вход</a><span class="nfm"> | <a href="#" class="btn-modal" data-modal="2">Регистрация</a></span>
+      </div>
+
+      <div class="header__logo">
+          <a href="/" title=""><img src="/assets/clever/images/logo_green.jpg" alt="Clever"></a>
+      </div>
+
+      <div class="header__info">
+        <li>
+          <sub>p</sub>
+          <a href="callto:+74733003677">+7 (473) 300 36 77</a>
+        </li>
+        <li>
+          <sub>e</sub>
+          <a href="mailto:info@linzavrn.ru">info@linzavrn.ru</a>
+        </li>
+        <li>
+          <sub>m</sub>
+          Воронеж, ул.Мира 3 <br>
+          <span>(вход с ул. Ф. Энгельса)</span>
+        </li>
+      </div>
+      <a href="#" class="header__basket">
+        <div id="basket">
+          <span class="ic">
+              <sub>b</sub>
+              <span id="item-count">0</span>
+          </span>
+          <span><span class="dark-text">0</span> руб</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container">
+    <button class="mobile-menu">
+      <span></span>
+    </button>
+    <ul>
+      <a href="/"><img src="/assets/clever/images/logo_white-sm.png" alt=""></a>
+      <a href="#">Акции, скидки</a>
+      <a href="#">Выбор очков</a>
+      <a href="#">Доставка и оплата</a>
+      <a href="#">Отзывы</a>
+      <a href="#">Копилка знаний</a>
+      <a href="#">Контакты</a>
+    </ul>
+    </div>
+  </nav>
+
+  <section class="c1">
+    <div class="container">
+      <h1>Оформление заказа</h1>
+      <div id="cart">
+        <div class="tabs-wrap">
+          <ul class="tabs-control">
+            <li class="active"><a href="1">Корзина</a></li>
+            <li><a href="2">Информация о клиенте</a></li>
+            <li><a href="3">Доставка и оплата</a></li>
+          </ul>
+          <div class="tabs-item active" id="item-1">
+            <form action="/" method="post" id="cart-form" accept-charset="UTF-8">
+              <table width="100%" id="basket-table">
+                  <thead>
+                    <tr>
+                      <th>Артикул</th>
+                      <th>Наименование товара</th>
+                      <th>Кол-во</th>
+                      <th>Цена за ед. <br> (руб.)</th>
+                      <th>Сумма <br>(руб.)</th>
+                      <th>Удалить</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>30303</td>
+                      <td><a href="#">Тетрадка 16 лист.</a></td>
+                      <td><input type="number" min="1" value="1" class="table-count"></td>
+                      <td class="order-price">50</td>
+                      <td class="total-price">50</td>
+                      <td><a href="#" class="cart-table__delete">Удалить</a></td>
+                    </tr>
+                      <tr>
+                        <td>11111</td>
+                        <td><a href="#">Учебник по математике</a></td>
+                        <td><input type="number" min="1" value="1" class="table-count"></td>
+                        <td class="order-price">50</td>
+                        <td class="total-price">50</td>
+                        <td><a href="#" class="cart-table__delete">Удалить</a></td>
+                      </tr>
+                      <tr>
+                        <td colspan="6"><b>Cумма заказа:</b> <input type="text" size="5" id="cart-result" value="100 руб." readonly></td>
+                      </tr>
+                      <tr>
+                        <td colspan="6"><a href="#">Авторизуйтесь,</a> чтобы увидеть свою скидку</td>
+                      </tr>
+                      <tr>
+                        <td colspan="6"><b>Итого к оплате:</b> 150 руб.</td>
+                      </tr>
+                  </tbody>
+              </table>
+              <button class="btn btn-next" data-next="2">Далее</button>
+            </form>
+          </div>
+          <div class="tabs-item" id="item-2">
+              <h2>Информация о клиенте</h2>
+              <div class="info-client">
+                 <input type="radio" class="fstpayment" id="fstpayment" name="infoclient" checked><label for="fstpayment">Покупаю в первый раз</label>
+                 <input type="radio" class="auth" id="auth" name="infoclient"><label for="auth">Я уже зарегистрирован</label>
+                 <div class="info-text">
+                    <p class="tab"><span>ФИО:</span> <input class="inpt" type="text" name="name" placeholder="Ваше имя"></p>
+                    <p class="tab"><span>Телефон:</span> <input class="inpt" type="text" name="name" placeholder="Ваше телефон"></p>
+                    <p class="tab"><span>E-mail:</span> <input class="inpt" type="text" name="name" placeholder="Ваше E-mail"></p>
+                 </div>
+                 <div class="login-text">
+                    <p class="tab"><span>ФИО:</span> Иванов Иван Иванович</p>
+                    <p class="tab"><span>E-mail:</span> example@mail.ru</p>
+                    <p class="tab"><span>Телефон:</span> +7 999 999-99-99</p>
+                    <p class="tab"><span>Адрес:</span> +7 999 999-99-99</p>
+                 </div>
+              </div>
+              <button class="btn btn-next" data-next="3">Далее</button>
+          </div>
+          <div class="tabs-item" id="item-3">
+           <div class="title"><h2>Выбор способа доставки</h2></div>
+            <div class="radio-group info-client">
+                <div class="radio-wrap">
+                    <input type="radio" id="delivery1" name="delivery" class="delivery" checked><label for="delivery1">Самовывоз <span class="t-sm">(ул. Мира 3, вход с ул. Ф. Энгельса)</span></label>
+                </div>
+                <div class="radio-wrap">
+                    <input type="radio" id="delivery2" name="delivery" class="delivery"><label for="delivery2">Доставка курьером по Воронежу</label>
+                    <textarea name="delivery-adres" id="delivery-adres1" rows="3" placeholder="Введите адрес"></textarea>
+                </div>
+                <div class="radio-wrap">
+                    <input type="radio" id="delivery3" name="delivery" class="delivery"><label for="delivery3">Доставка почтой по России</span>
+                    <textarea name="delivery-adres" id="delivery-adres2" rows="3" placeholder="Введите адрес"></textarea>
+                </div>
+            </div>
+            <div class="title"><h2>Выбор способа оплаты</h2></div>
+            <div class="radio-group col-4">
+                <div class="radio-wrap">
+                    <input type="radio" id="payment1" class="payment" name="payment" checked><label for="payment1">Online-оплата банковской картой</label>
+                    <img src="/assets/clever/images/credit-card.png" alt="">
+                </div>
+                <div class="radio-wrap">
+                    <input type="radio" id="payment2" class="payment" name="payment"><label for="payment2">Наличными при получении в магазине</label>
+                    <img src="/assets/clever/images/cash-register.png" alt="">
+                </div>
+                <div class="radio-wrap">
+                    <input type="radio" id="payment3" class="payment" name="payment"><label for="payment3">Наличными курьеру при получении</label>
+                    <img src="/assets/clever/images/money.png" alt="">
+                </div>
+                <div class="radio-wrap">
+                    <input type="radio" id="payment4" class="payment" name="payment"><label for="payment4">Наложным платежом</label>
+                    <img src="/assets/clever/images/invoice.png" alt="">
+                </div>
+            </div>
+            <input type="submit" value="Подтвердить заказ" class="btn">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=jVsnmgT42G7iPfHOgqJ3vkTm5qEjlZbi&amp;width=100%&amp;height=300&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+  </section>
+
+  <footer>
+    <div class="f-top">
+      <div class="container">
+        <ul>
+          <li><a href="/"><img src="/assets/clever/images/logo_white.png" alt="Clever"></a></li>
+          <li><sub>p</sub><a href="callto:+74733003677">+7 (473) 300 36 77</a></li>
+          <li><sub>e</sub><a href="mailto:info@linzavrn.ru">info@linzavrn.ru</a></li>
+          <li><sub>m</sub>Воронеж, ул.Мира 3</li>
+        </ul>
+        <div class="soc">
+          <a href="#" target="_blank">v</a>
+          <a href="#" target="_blank">f</a>
+          <a href="#" target="_blank">o</a>
+          <a href="#" target="_blank">g</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bot">
+    <div class="container">
+      <span>&copy; Copyright 2016</span>
+      <a href="/" title=""><img src="/assets/clever/images/madein.png" alt="intrid"></a>
+    </div>
+    </div>
+  </footer>
+
+  <!-- modal box -->
+  <div class="g-hidden">
+    <div class="box-modal zv clearfix" id="modal-1">
+      <div class="box-modal_close arcticmodal-close">X</div>
+      <div class="modal-form">
+        <form class="form" method="post" action="/">
+          <input type="email" name="login" placeholder="Ваш логин (email)" required>
+          <input type="password" name="password" placeholder="Ваш пароль" required>
+          <p><button type="submit" class="btn">Войти</button></p>
+          <p><a href="#">Забыли пароль?</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="g-hidden">
+    <div class="box-modal zv clearfix" id="modal-2">
+      <div class="box-modal_close arcticmodal-close">X</div>
+      <div class="modal-form">
+        <form class="form" method="post" action="/">
+          <input type="text" name="name" placeholder="ФИО" required>
+          <input type="email" name="email" placeholder="Ваш логин (email)" required>
+          <input type="password" name="password" placeholder="Введите пароль" required>
+          <input type="password" name="password" placeholder="Повторите пароль" required>
+          <input type="tel" name="tel" placeholder="Ваш телефон" required>
+          <textarea name="adress" id="adress" cols="30" rows="10" placeholder="Ваш адрес"></textarea>
+          <p>Гугл каптча галочкой</p>
+          <p><button type="submit" class="btn">Зарегестрироваться</button></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- end of modal box -->
+
+<script src="js/html5shiv.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/jquery.bxslider.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/jquery-ui2.min.js"></script>
+<script src="js/jquery.cslider.js"></script>
+<script src="js/modernizr.custom.js"></script>
+<script src="js/modal.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

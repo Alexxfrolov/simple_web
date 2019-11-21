@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/clever/styles/normalize.css">
+    <link rel="stylesheet" href="/assets/clever/styles/jquery.bxslider.css">
+    <link rel="stylesheet" href="/assets/clever/styles/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo-sm">
+      <a href="/"><img src="/assets/clever/images/logo_white-sm.png" alt=""></a>
+    </div>
+
+    <div class="container">
+      <div class="header__login">
+          <a href="#" class="btn-modal" data-modal="1">Вход</a><span class="nfm"> | <a href="#" class="btn-modal" data-modal="2">Регистрация</a></span>
+      </div>
+
+      <div class="header__logo">
+          <a href="/" title=""><img src="/assets/clever/images/logo_green.jpg" alt="Clever"></a>
+      </div>
+
+      <div class="header__info">
+        <li>
+          <sub>p</sub>
+          <a href="callto:+74733003677">+7 (473) 300 36 77</a>
+        </li>
+        <li>
+          <sub>e</sub>
+          <a href="mailto:info@linzavrn.ru">info@linzavrn.ru</a>
+        </li>
+        <li>
+          <sub>m</sub>
+          Воронеж, ул.Мира 3
+        </li>
+      </div>
+      <a href="/clever/cart" class="header__basket">
+        <div id="basket">
+          <span class="ic">
+              <span id="item-count">0</span>
+              <sub>b</sub>
+          </span>
+          <span><span class="dark-text">0</span> руб</span>
+        </div>
+      </a>
+    </div>
+  </header>
+
+  <nav class="navbar">
+    <div class="container">
+    <button class="mobile-menu">
+      <span></span>
+    </button>
+    <ul>
+      <a href="/"><img src="/assets/clever/images/logo_white-sm.png" alt=""></a>
+      <a href="#">Акции, скидки</a>
+      <a href="#">Выбор очков</a>
+      <a href="#">Доставка и оплата</a>
+      <a href="#">Отзывы</a>
+      <a href="#">Копилка знаний</a>
+      <a href="#">Контакты</a>
+    </ul>
+    </div>
+  </nav>
+
+  <section class="c1">
+    <div class="container">
+      <button class="mobile-filter"></button>
+      <div class="filter nfm">
+        <h2>Что Вы ищите?</h2>
+        <ul class="filter_cat">
+          <select name="" id="">
+            <option value="Марочные линзы для очков">Марочные линзы для очков</option>
+            <option value="Оправы для очков">Оправы для очков</option>
+            <option value="Солнцезащитные очки">Солнцезащитные очки</option>
+            <option value="Аксессуары и принадлежности">Аксессуары и принадлежности</option>
+          </select>
+          <li class="drop"><a href="#">Бренд</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="ZEISS" type="checkbox">
+                <label for="ZEISS">ZEISS</label>
+              </li>
+              <li>
+                <input id="Essilor" type="checkbox">
+                <label for="Essilor">Essilor</label>
+              </li>
+              <li>
+                <input id="LTL" type="checkbox">
+                <label for="LTL">LTL</label>
+              </li>
+              <li>
+                <input id="INDO" type="checkbox">
+                <label for="INDO">INDO INTRA</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Возраст</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="Adults" type="checkbox">
+                <label for="Adults">Взрослые</label>
+              </li>
+              <li>
+                <input id="teenage" type="checkbox">
+                <label for="teenage">Подростковые</label>
+              </li>
+              <li>
+                <input id="kids" type="checkbox">
+                <label for="kids">Детские</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Пол</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="male" type="checkbox">
+                <label for="male">Мужские</label>
+              </li>
+              <li>
+                <input id="famale" type="checkbox">
+                <label for="famale">Женские</label>
+              </li>
+              <li>
+                <input id="uni" type="checkbox">
+                <label for="uni">Унисекс</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Материал</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="metall" type="checkbox">
+                <label for="metall">Металл</label>
+              </li>
+              <li>
+                <input id="plastick" type="checkbox">
+                <label for="plastick">Пластик</label>
+              </li>
+              <li>
+                <input id="combo" type="checkbox">
+                <label for="combo">Комбинированн</label>
+              </li>
+              <li>
+                <input id="other" type="checkbox">
+                <label for="other">Другое</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Форма</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="rectangular" type="checkbox">
+                <label for="rectangular">Прямоугольная</label>
+              </li>
+              <li>
+                <input id="round" type="checkbox">
+                <label for="round">Круглая</label>
+              </li>
+              <li>
+                <input id="oval" type="checkbox">
+                <label for="oval">Овальная</label>
+              </li>
+              <li>
+                <input id="batterfly" type="checkbox">
+                <label for="batterfly">Бабочки</label>
+              </li>
+              <li>
+                <input id="drops" type="checkbox">
+                <label for="drops">Капли</label>
+              </li>
+              <li>
+                <input id="cat" type="checkbox">
+                <label for="cat">Кошачий глаз</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Конструкция оправы</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="tipping" type="checkbox">
+                <label for="tipping">Ободковая</label>
+              </li>
+              <li>
+                <input id="polutipping" type="checkbox">
+                <label for="polutipping">Полуободковая</label>
+              </li>
+              <li>
+                <input id="beztipping" type="checkbox">
+                <label for="beztipping">Безободковая</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Наличие флекса</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="yesflex" type="checkbox">
+                <label for="yesflex">Есть</label>
+              </li>
+              <li>
+                <input id="noflex" type="checkbox">
+                <label for="noflex">Нет</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Цвет оправы</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="white" type="checkbox">
+                <label for="white">Белая</label>
+              </li>
+              <li>
+                <input id="blue" type="checkbox">
+                <label for="blue">Синяя</label>
+              </li>
+              <li>
+                <input id="red" type="checkbox">
+                <label for="red">Красная</label>
+              </li>
+              <li>
+                <input id="grey" type="checkbox">
+                <label for="grey">Серая</label>
+              </li>
+              <li>
+                <input id="black" type="checkbox">
+                <label for="black">Черная</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Наличие футляра</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="yesfilter" type="checkbox">
+                <label for="yesfilter">Есть</label>
+              </li>
+              <li>
+                <input id="nofilter" type="checkbox">
+                <label for="nofilter">Нет</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Страна производства</a>
+            <ul class="cat_dropdown">
+              <li>
+                <input id="germany" type="checkbox">
+                <label for="germany">Германия</label>
+              </li>
+              <li>
+                <input id="france" type="checkbox">
+                <label for="france">Франция</label>
+              </li>
+              <li>
+                <input id="italy" type="checkbox">
+                <label for="italy">Италия</label>
+              </li>
+              <li>
+                <input id="spain" type="checkbox">
+                <label for="spain">Испания</label>
+              </li>
+              <li>
+                <input id="singapore" type="checkbox">
+                <label for="singapore">Сингапур</label>
+              </li>
+            </ul>
+          </li>
+          <li class="drop"><a href="#">Цена</a>
+            <ul class="cat_dropdown">
+              <li>
+                  <div id="slider-cost"></div>
+                  <p>
+                    <input type="text" id="cost-min" readonly>
+                     -
+                    <input type="text" id="cost-max" readonly>
+                  </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <button class="btn">Применить</button>
+      </div>
+      <div class="content">
+        <div class="search">
+          <form action="/" method="post">
+            <input type="search" placeholder="Поиск">
+            <input type="submit" value="">
+          </form>
+        </div>
+        <div class="cart-tabs" id="tabs">
+          <ul>
+            <li><a class="tabs-link" href="#tabs-1" data-cart="1">Очки</a></li>
+            <li><a class="tabs-link" href="#tabs-2" data-cart="2">Солнцезащитные очки</a></li>
+            <li><a class="tabs-link" href="#tabs-3" data-cart="3"><span class="icon-linza-logo"></span>Контактные линзы</a></li>
+                      <div class="pagination">
+            <ul>
+              <li><a href="#">Линзы для очков</a></li>
+              <li><a href="#">Бренд</a></li>
+              <li><a href="#" class="active">Rodenstock Perfalit</a></li>
+            </ul>
+          </div>
+          </ul>
+          <div class="tabs-content hide" id="tabs-1">
+            <p class="tabs-title"><span>Оправы медицинские</span></p>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <p class="tabs-title"><span>Марочные линзы для очков</span></p>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <p class="tabs-title"><span>Аксессуары</span></p>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+          </div>
+          <div class="tabs-content hide" id="tabs-2">
+            <p class="tabs-title"><span>Оправы медицинские</span></p>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <p class="tabs-title"><span>Марочные линзы для очков</span></p>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <p class="tabs-title"><span>Аксессуары</span></p>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+          </div>
+          <div class="tabs-content hide" id="tabs-3">
+            <p class="tabs-title"><span>Оправы медицинские</span></p>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <p class="tabs-title"><span>Марочные линзы для очков</span></p>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <p class="tabs-title"><span>Аксессуары</span></p>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+            <ul>
+              <li>бренд АААААА</li>
+              <li>бренд ББББББ</li>
+              <li>бренд ВВВВВВ</li>
+            </ul>
+          </div>
+        </div>
+        <div class="cart-wrap">
+          <h2>Rodenstock  Perfalit</h2>
+          <div class="c-slider">
+            <ul class="cart-slider">
+              <li><img src="/assets/clever/images/glases.jpg" /></li>
+              <li><img src="/assets/clever/images/glases.jpg" /></li>
+              <li><img src="/assets/clever/images/glases.jpg" /></li>
+            </ul>
+            <div id="bx-pager">
+              <a data-slide-index="0" href=""><img src="/assets/clever/images/glases.jpg" /></a>
+              <a data-slide-index="1" href=""><img src="/assets/clever/images/glases.jpg" /></a>
+              <a data-slide-index="2" href=""><img src="/assets/clever/images/glases.jpg" /></a>
+            </div>
+          </div>
+          <div class="desc">
+            <table>
+              <tr>
+                <td>Артикул:</td>
+                <td>9340100024</td>
+              </tr>
+              <tr>
+                <td>Рефракция: (оптическая сила)</td>
+                <td><select name="" id="">
+                  <option value="+ 20.00 дптр">+ 20.00 дптр</option>
+                  <option value="+ 20.00 дптр">+ 20.00 дптр</option>
+                  <option value="+ 20.00 дптр">+ 20.00 дптр</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td>Тип:</td>
+                <td>Прогрессивная</td>
+              </tr>
+              <tr>
+                <td>Материал:</td>
+                <td>Поликарбонат</td>
+              </tr>
+              <tr>
+                <td>Индекс преломления:</td>
+                <td><select name="" id="">
+                  <option value="1.56">1,56</option>
+                  <option value="1">1</option>
+                  <option value="0.5">0,5</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td>Покрытие:</td>
+                <td>Есть</td>
+              </tr>
+              <tr>
+                <td>УФ-защита:</td>
+                <td>Есть</td>
+              </tr>
+              <tr>
+                <td>Окраска:</td>
+                <td>Есть, Черная</td>
+              </tr>
+              <tr>
+                <td>Число Аббе:</td>
+                <td>
+                  <select name="" id="">
+                    <option value="20">20</option>
+                    <option value="15">15</option>
+                    <option value="10">10</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Диаметр:</td>
+                <td>
+                  <select name="diametr" id="diametr">
+                    <option value="50">50 мм</option>
+                    <option value="40">40 мм</option>
+                    <option value="30">30 мм</option>
+                  </select>
+                </td>
+              </tr>
+              <tr>
+                <td>Дизайн:</td>
+                <td>Биасферическая</td>
+              </tr>
+              <tr>
+                <td>Страна производитель:</td>
+                <td>Германия</td>
+              </tr>
+              <tr>
+                <td colspan="2"><p><span class="tab">Цена:</span> <span class="line">2500 руб.</span></p></td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <p>
+                    <span class="tab">Ваша Цена:</span> <span class="text-lg">1890</span> руб.
+                  </p>
+                  <input type="number" name="col" placeholder="К-в" required>
+                  <button class="btn-cart">В корзину</button>
+                </td>
+              </tr>
+            </table>
+            <p><a href="#">Авторизуйтесь</a>, чтобы увидеть свою скидку</p>
+          </div>
+        </div>
+        <div class="item-desc">
+          <p class="green">Описание товара:</p>
+          <p>Мы все настолько привыкли к очкам, что воспринимаем их как что-то древнее, существовавшее по длительности наравне с человеком. Но история рассказывает иначе: очки для зрения появились примерно семь столетий назад. Родиной признано считать Италию, однако более точных сведений пока что не существует. Есть несколько теорий по поводу авторства, но это уже не столь важно.
+          Главное, что очки с диоптриями появились достаточно давно, чтобы к нашему времени полностью пройти путь от простого к сложному. Эволюция этой вещи довольно интересна: простое стекло, хрусталь и даже битые кусочки стекольной тары – вот первые материалы, из которых средневековые мастера изготавливали на заказ полностью готовые очки с диоптриями. Сейчас технологии позволяют изготавливать этот аксессуар из более качественных материалов и очки служат намного дольше, чем в ту далёкую пору.</p>
+          <p>В то время далеко не каждый мог позволить себе удовольствие в корректировке зрения. В основном,       это была королевская и дворянская знать, а также монахи. Последние, кстати, более остро нуждались в очках, так как проводили слишком много времени в недостаточно освещённых кельях за рукописями. Согласитесь, что мало чего поменялось – сейчас злоупотребление пребыванием за ПК или постоянное чтение так же способны испортить зрение, как и в случае со средневековыми монахами. Но только если у них наверняка не было именно качественных очков, то наше поколение получило уникальную возможность купить очки для зрения исключительного качества.</p>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="map">
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=jVsnmgT42G7iPfHOgqJ3vkTm5qEjlZbi&amp;width=100%&amp;height=300&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=false"></script>
+  </section>
+
+  <footer>
+    <div class="f-top">
+      <div class="container">
+        <ul>
+          <li><a href="/"><img src="/assets/clever/images/logo_white.png" alt="Clever"></a></li>
+          <li><sub>p</sub><a href="callto:+74733003677">+7 (473) 300 36 77</a></li>
+          <li><sub>e</sub><a href="mailto:info@linzavrn.ru">info@linzavrn.ru</a></li>
+          <li><sub>m</sub>Воронеж, ул.Мира 3</li>
+        </ul>
+        <div class="soc">
+          <a href="#" target="_blank">v</a>
+          <a href="#" target="_blank">f</a>
+          <a href="#" target="_blank">o</a>
+          <a href="#" target="_blank">g</a>
+        </div>
+      </div>
+    </div>
+    <div class="f-bot">
+    <div class="container">
+      <span>&copy; Copyright 2016</span>
+      <a href="/" title=""><img src="/assets/clever/images/madein.png" alt="intrid"></a>
+    </div>
+    </div>
+  </footer>
+
+  <!-- modal box -->
+  <div class="g-hidden">
+    <div class="box-modal zv clearfix" id="modal-1">
+      <div class="box-modal_close arcticmodal-close">X</div>
+      <div class="modal-form">
+        <form class="form" method="post" action="/">
+          <input type="email" name="login" placeholder="Ваш логин (email)" required>
+          <input type="password" name="password" placeholder="Ваш пароль" required>
+          <p><a href="#">Забыли пароль?</a></p>
+          <p><button type="submit" class="btn">Войти</button></p>
+          <p class="dfm"><a href="#">Регистрация</a></p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="g-hidden">
+    <div class="box-modal zv clearfix" id="modal-2">
+      <div class="box-modal_close arcticmodal-close">X</div>
+      <div class="modal-form">
+        <form class="form" method="post" action="/">
+          <input type="text" name="name" placeholder="ФИО" required>
+          <input type="email" name="email" placeholder="Ваш логин (email)" required>
+          <input type="password" name="password" placeholder="Введите пароль" required>
+          <input type="password" name="password" placeholder="Повторите пароль" required>
+          <input type="tel" name="tel" placeholder="Ваш телефон" required>
+          <textarea name="adress" id="adress" cols="30" rows="10" placeholder="Ваш адрес"></textarea>
+          <p>Гугл каптча галочкой</p>
+          <p><button type="submit" class="btn">Зарегестрироваться</button></p>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- end of modal box -->
+
+<script src="/assets/clever/scripts/html5shiv.js"></script>
+<script src="/assets/clever/scripts/jquery.js"></script>
+<script src="/assets/clever/scripts/jquery.bxslider.js"></script>
+<script src="/assets/clever/scripts/jquery-ui.min.js"></script>
+<script src="/assets/clever/scripts/jquery-ui2.min.js"></script>
+<script src="/assets/clever/scripts/jquery.cslider.js"></script>
+<script src="/assets/clever/scripts/modernizr.custom.js"></script>
+<script src="/assets/clever/scripts/modal.js"></script>
+<script src="/assets/clever/scripts/common.js"></script>
+
+</body>
+</html>
