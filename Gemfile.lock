@@ -10,7 +10,7 @@ GEM
     pry-byebug (3.7.0)
       byebug (~> 11.0)
       pry (~> 0.10)
-    puma (3.12.1)
+    puma (3.12.2)
     rack (2.0.7)
 
 PLATFORMS
@@ -18,7 +18,7 @@ PLATFORMS
 
 DEPENDENCIES
   pry-byebug
-  puma (~> 3.11)
+  puma (~> 3.12)
   rack
 
 RUBY VERSION
